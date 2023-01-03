@@ -4,7 +4,9 @@
 @endif
 @foreach($listings as $listing)
   <h2>
-    {{$listing['title']}}
+    <a href="/laravel_gigs/public/listings/{{$listing['id']}}">
+      {{$listing['title']}}
+    </a>
   </h2>
   <p>
     {{$listing['description']}}
